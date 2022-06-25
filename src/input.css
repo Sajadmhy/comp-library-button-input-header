@@ -1,0 +1,79 @@
+.storybook-input {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  margin: 2em;
+}
+
+.storybook-input input {
+    border: solid 1px #e6e6e6;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+}
+
+.storybook-input label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.storybook-input--primary input{
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  padding: 11px 20px;
+  font-size: 14px;
+}
+
+.storybook-input--primary , .storybook-input--secondary {
+    font-size: 14px;
+}
+
+.storybook-input--secondary input{
+    color: white;
+    background-color: #1ea7fd;
+    padding: 11px 20px;
+    font-size: 14px;
+}
+
+.storybook-input--secondary input::placeholder {
+    color: white;
+}
+
+.storybook-input--small input {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.storybook-input--small {
+    font-size: 12px;
+}
+  
+.storybook-input--medium input {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.storybook-input--medium {
+    font-size: 14px;
+}
+
+.storybook-input--large input {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.storybook-input--large {
+    font-size: 16px;
+}
+
