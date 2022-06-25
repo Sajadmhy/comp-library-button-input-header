@@ -13,5 +13,5 @@ This is a component library created with React and StoryBook.
 Import the components you need from the library.
 
 ```jsx
-import { Input, Header, Button } from "./sajad-react-component-library";
+import { Input, Header, Button } from "sajad-react-component-library";
 ```
