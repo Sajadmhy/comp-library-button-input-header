@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './input.css';
 
-export default function Input({
+export const Input = ({
   label,
   size,
   primary,
@@ -11,10 +11,10 @@ export default function Input({
   type,
   placeholder,
   ...props
-}) {
+}) => {
     const mode = primary ? 'storybook-input--primary' : 'storybook-input--secondary';
     return (
-    <div className={['storybook-input', `storybook-input--${size}`, mode].join(' ')}>
+    <div data-testid='input' className={['storybook-input', `storybook-input--${size}`, mode].join(' ')}>
       <label htmlFor={label}>{label}</label>
       <input
         type={type}
@@ -25,4 +25,23 @@ export default function Input({
       />
     </div>
   );
+}
+
+Input.prototype = {
+  label: PropTypes.string.isRequired,
+
+  primary: PropTypes.bool,
+
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+
+  value: PropTypes.string,
+
+  onChange: PropTypes.func,
+}
+
+Input.defaultProps = {
+  primary: true,
+  size: 'medium',
+  value: '',
+  onChange: undefined,
 }

@@ -1,4 +1,5 @@
-import Button from './stories/Button.jsx';
-import Header from './stories/Header.jsx';
+import {Button} from './Button';
+import {Header} from './Header';
+import {Input} from './Input';
 
-export { Button, Header };
+export { Button, Header, Input };
